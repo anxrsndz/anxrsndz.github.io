@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <script type="text/javascript">
+    function obtenerdatos()
+    {
+        var boleta = parseFloat(document.getElementById('boleta').value);
+        var nombre = document.getElementById('nombre').value;
+        var grupo = parseFloat(document.getElementById('grupo').value);
+        var materia = document.getElementById('materia').value;
+        var fecha = parseFloat(document.getElementById('fecha').value);
+
+        document.registro.boletaobtenida.value = boleta;
+        document.registro.nombreobtenido.value = nombre;
+        document.registro.grupoobtenido.value = grupo;
+        document.registro.materiaobtenida.value = materia;
+        document.registro.fechaobtenida.value = fecha;
+    }
+
+
+    </script>
+</head>
+<body>
+    <form name="registro">
+<table border="1">
+    <tr>
+        <td>Boleta:</td><td><input type="text" name="boleta" id="boleta"> </td>
+    </tr>
+    <tr>
+        <td>Nombre:</td><td><input type="text" name="nombre" id="nombre"></td>
+    </tr>
+    <tr>
+        <td>Grupo:</td><td><input type="text" name="grupo" id="grupo"></td>
+    </tr>
+    <tr>
+        <td>Materia:</td><td><input type="text" name="materia" id="materia"></td>
+    </tr>
+    <tr>
+        <td>Fecha:</td><td><input type="text" name="fecha" id="fecha"></td>
+    </tr>
+    <tr>
+        <td colspan "2"><input type="button" name="btn1" value="Enviar" onclick="obtenerdatos()"></td>
+    </tr>
+</table><br/><br/><br/>
+
+
+
+<table border="1">
+<tr>
+    <td>Boleta:</td><td><input type="text" name="boletaobtenida" id="boletaobtenida"></td>
+</tr>
+<tr>
+    <td>Nombre:</td><td><input type="text" name="nombreobtenido" id="nombreobtenido"></td>
+</tr>
+<tr>
+    <td>Grupo:</td><td><input type="text" name="grupoobtenido" id="grupoobtenido"></td>
+</tr>
+<tr>
+    <td>Materia:</td><td><input type="text" name="materiaobtenida" id="materiaobtenida"></td>
+</tr>
+<tr>
+    <td>Fecha:</td><td><input type="text" name="fechaobtenida" id="fechaobtenida"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
